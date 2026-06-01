@@ -1,11 +1,18 @@
-console.log("Hello")
+const accountId = 196552323
+let accountEmail = "saurabhyaduvanshi@gmail.com"
+var accountPassword = "123456"
+accountCity = "Jaipur"
+let state ;
 
-const name = "Saurabh";
+// accountId = 2 is not allowed because already define on top of display 
 
-console.log("Welcome " + name);
+accountEmail = "random@gmail.com"
+accountPassword = "21212121"
+accountCity = "America"
 
-function add(a, b) {
-  return a + b;
-}
+console.log(accountId)
+/* prefer not to user var 
+because of issue in block scope and functional scope
+*/
 
-console.log(add(10, 20));
+console.table([accountId,accountEmail,accountPassword,accountCity,state])
