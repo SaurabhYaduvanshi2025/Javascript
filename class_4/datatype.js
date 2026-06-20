@@ -29,3 +29,7 @@ let  myObj = {
     name:"Saurabh",
     age:25,
 }
+
+const myfunction = function(){
+    console.log ("Hello World");
+}
