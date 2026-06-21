@@ -33,3 +33,5 @@ let  myObj = {
 const myfunction = function(){
     console.log ("Hello World");
 }
+
+console.log(typeof heros)
