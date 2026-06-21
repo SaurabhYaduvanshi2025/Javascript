@@ -15,3 +15,17 @@ anotherYoutubename = "chaiorcode";
 
 console.log(myYoutubename); // Output: histeshchoudharydotcom
 console.log(anotherYoutubename); // Output: chaiorcode
+
+
+
+let userOne = {
+    name: "histesh",
+    age: 22 ,
+}
+
+let usertwo=userOne;
+
+usertwo.name="choudhary";
+
+console.log(userOne.name); // Output: choudhary
+console.log(usertwo.name); // Output: choudhary
