@@ -28,3 +28,4 @@ const url = "http://saurabh.com/saurabh%20yadav"
 
 console.log(url.replace('%20','_'));
 console.log(url.includes('rohit'))
+console.log(gameName.split('-'));
