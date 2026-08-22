@@ -7,10 +7,22 @@
 // }
 
 
-const newValue = function (value){
-    return value + 10; 
-                       // The function `newValue` takes a parameter `value` and returns the result of adding `10` to it. In this case, if you call `newValue(5)`, it will return `15`.   
+// const newValue = function (value){
+//     return value + 10; 
+//                        // The function `newValue` takes a parameter `value` and returns the result of adding `10` to it. In this case, if you call `newValue(5)`, it will return `15`.   
+// }
+// console.log(newValue(5));
+
+
+function one(){
+    const username = "saurabh"
+
+    function two(){
+        const website = "Yadav"
+        console.log(username)
+    }
+    console.log(website)
+
+    two()
 }
-console.log(newValue(5));
-
-
+one()
