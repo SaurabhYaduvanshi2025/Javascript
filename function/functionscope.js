@@ -21,8 +21,9 @@ function one(){
         const website = "Yadav"
         console.log(username)
     }
-    console.log(website)
-
+    
     two()
+        console.log(website)
+
 }
 one()
