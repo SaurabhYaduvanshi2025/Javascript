@@ -34,11 +34,11 @@
 
 
 
-const map = new Map()
+// const map = new Map()
 
-map.set('UK' ,"Uttara Khand")
-map.set('UP', "Uttar Pradesh")
-map.set('DEL', "Delhi")
+// map.set('UK' ,"Uttara Khand")
+// map.set('UP', "Uttar Pradesh")
+// map.set('DEL', "Delhi")
 
 
 
@@ -46,11 +46,72 @@ map.set('DEL', "Delhi")
 
 
 
-for(const [key,value] of map){
+// for(const [key,value] of map){
 
-    console.log(key, "=", value)
+//     console.log(key, "=", value)
 
-}
+// }
+
+
+// Array practice done in loop and map now this time for object
+
+
+// const myObject = {
+//     js : 'Javascript',
+//     cpp : 'C++',
+//      py : 'Python'
+// }
+
+
+// for (const key in myObject){
+//     console.log(`${myObject[key]}`)
+// }
 
 
 
+
+// for each loop with example
+
+    // const coding = ["Javascript","C++", "Php","react"];
+
+
+    // coding.forEach(function(value){
+    //     console.log(value)
+    // });
+
+
+
+    // const myArray = ["Bike", "car", "Train", "Air Flight"];
+
+    // myArray.forEach(function(myArray){
+    //            console.log(myArray)
+    // })
+
+
+    // Array ke ander Object ki practice with  for each loop
+
+
+
+    const myCoding = [
+        {
+            LanguageName : "Javascript",
+            ShortForm : "Js"
+        },
+
+        {
+
+            LanguageName : "Python",
+            ShortForm    : "py"
+        },
+
+        {
+            LanguageName : "PHP",
+            ShortForm    : "php"
+        }
+    ]
+
+
+
+    myCoding.forEach((Value) => {
+        console.log(Value.ShortForm);
+    })
