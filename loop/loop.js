@@ -113,5 +113,5 @@
 
 
     myCoding.forEach((Value) => {
-        console.log(Value.ShortForm);
+        console.log(Value.ShortForm );
     })
