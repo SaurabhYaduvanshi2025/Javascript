@@ -32,6 +32,42 @@
 
 const myNumber = [1,2,3,4,5,6,7,8,9]
 
-let newNum = myNumber.map((num) => {return num + 10})
+// let newNum = myNumber.map((num) => {return num + 10})
 
-console.log(newNum)
+//    let newNumber = myNumber
+//                               .map((num) => num*10 )
+//                               .map((num) => num+2 )
+//                               .filter((num) => num >48)
+                              
+
+// console.log(newNumber)
+
+// const myTotal = myNumber.reduce(function(acc,curvalue){
+//       console.log(`acc: ${acc} and  curvalue: ${curvalue}`);
+//       return acc + curvalue
+// },0)
+// console.log(myTotal)
+
+// const myTotal = myNumber.reduce((acc,curvalue) => acc + curvalue,0)
+
+// console.log(myTotal)
+
+
+const  Shoppingcart = [
+    {
+        itemName: "js Course",
+        price:2999
+    },
+    {
+        itemName: "MERN Course",
+        price:3999
+    },
+    {
+        itemName:"Backend Php Course",
+        price: 3599
+    }
+]
+
+const totalprice = Shoppingcart.reduce((acc, item) =>  acc + item.price,0)
+
+console.log(totalprice)
