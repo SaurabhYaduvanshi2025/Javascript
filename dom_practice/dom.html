@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <div class="prents">
+       
+        <div class="class">Monday</div>
+        <div class="class">Tuesday</div>
+        <div class="class">Wednesday</div>
+        <div class="class">Thursday</div>
+
+
+    </div>
+</body>
+
+    <script>
+        const parents = document.querySelector('.prents')
+        console.log(parents)
+        console.log(parents.children);
+        console.log(parents.children[1].innerHTML);
+        console.log(parents.children[0].textContent);
+
+
+        for(let i = 0; i<parents.children.length; i++){
+            console.log(parents.children[i].innerHTML);
+        }
+    </script>
+
+</html>
