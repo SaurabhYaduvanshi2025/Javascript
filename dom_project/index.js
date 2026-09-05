@@ -57,6 +57,29 @@ bmiValue.textContent = bmi.toFixed(2);
        bmiMessage.textContent = "";
 
 
+bmiMessage.classList.remove(
+    "text-blue-500",
+    "text-green-500",
+    "text-orange-500",
+    "text-red-500"
+);
+
+if (bmi < 18.5) {
+    bmiMessage.textContent = "You are Underweight";
+    bmiMessage.classList.add("text-blue-500");
+}
+else if (bmi < 25) {
+    bmiMessage.textContent = "You are Normal Weight";
+    bmiMessage.classList.add("text-green-500");
+}
+else if (bmi < 30) {
+    bmiMessage.textContent = "You are Overweight";
+    bmiMessage.classList.add("text-orange-500");
+}
+else {
+    bmiMessage.textContent = "You are Obese";
+    bmiMessage.classList.add("text-red-500");
+}
 })
 
 
