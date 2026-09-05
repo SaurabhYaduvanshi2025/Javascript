@@ -54,4 +54,19 @@ calculateBtn.addEventListener("click", function(){
 
 bmiValue.textContent = bmi.toFixed(2);
 
+       bmiMessage.textContent = "";
+
+
+})
+
+
+//Reset Button Functionality
+
+resetBtn.addEventListener( "click",function(){
+
+    height.value = "";
+    weight.value = "";
+
+    bmiValue.textContent = "";
+    bmiMessage.textContent = "Enter Your  Height and Weight to Calculate BMI";
 })
