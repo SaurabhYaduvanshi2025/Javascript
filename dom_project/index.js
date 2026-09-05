@@ -22,3 +22,36 @@ buttons.forEach(function (button) {
         }
     });
 });
+
+
+// BMI Projects DOM Code Start From Here
+
+const height = document.querySelector('#height');
+const weight = document.querySelector('#weight');
+
+const calculateBtn =  document.querySelector('#calculateBtn');
+const  resetBtn = document. querySelector('#resetBtn');
+
+const result = document.querySelector('#result');
+
+const bmiMessage = document.querySelector('#bmiMessage');
+const bmiValue = document.querySelector('#bmiValue');
+
+
+
+
+const toMeters = (cm) => cm / 100;
+
+calculateBtn.addEventListener("click", function(){
+
+    const heightInMeters = toMeters(height.value);
+
+    const bmi = weight.value / (heightInMeters * heightInMeters);
+
+        console.log("BMI:", bmi);
+
+
+
+bmiValue.textContent = bmi.toFixed(2);
+
+})
