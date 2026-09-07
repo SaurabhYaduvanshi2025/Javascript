@@ -1,54 +1,26 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Event Practice</title>
-</head>
-<body>
+const userForm = document.getElementById("userForm");
 
-    <h1>User Manager</h1>
+const username = document.getElementById("username");
 
-    <form id="userForm">
+const submit = document.getElementById("addUser");
 
-        <input
-            type="text"
-            id="username"
-            placeholder="Enter username"
-        >
 
-        <button type="submit" id="addUser">
-            Add User
-        </button>
 
-    </form>
 
-    <p id="message"></p>
+username.addEventListener("input", (e)=>{
+    console.log(e.target.value);
 
-    <h2>Users</h2>
+})
 
-    <ul id="userList">
 
-        <li>
-            Saurabh
-            <button class="deleteBtn">Delete</button>
-        </li>
+username.addEventListener("focus", (e)=>{
 
-        <li>
-            Rahul
-            <button class="deleteBtn">Delete</button>
-        </li>
+       console.log("Input field is focused")
 
-        <li>
-            Amit
-            <button class="deleteBtn">Delete</button>
-        </li>
+})
 
-    </ul>
 
-    <script src="script.js"></script>
-
-</body>
-</html>
-```
+userForm.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    console.log("Form submitted");
+})
