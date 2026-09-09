@@ -11,6 +11,7 @@
     <button id="start">Start</button>
     <button id="stop">Stop</button>
 
+    <div id="output"></div>
 </body>
 
 <script>
@@ -34,31 +35,25 @@
 
     //     console.log("Stoped")
     // })
-
-const heading = document.querySelector("h1");
 const start = document.querySelector("#start");
 const stop = document.querySelector("#stop");
+const output = document.querySelector("#output");
 
-const text = ["Hello", "Saurabh", "Yaduvanshi"];
-
-let index = 0;
 let interval;
 
 start.addEventListener("click", () => {
     interval = setInterval(() => {
-        heading.textContent = text[index];
 
-        index++;
+        const name = document.createElement("p");
+        name.textContent = "Saurabh Yaduvanshi";
 
-        if (index === text.length) {
-            index = 0;
-        }
+        output.append(name);
+
     }, 1000);
 });
 
 stop.addEventListener("click", () => {
     clearInterval(interval);
-});    
-
+});
 </script>
 </html>
