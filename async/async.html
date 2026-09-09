@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice With Async</title>
+</head>
+<body>
+    
+    <h1>Practice With Async</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+
+<script>
+
+    // const sayHello = () =>{
+    //     console.log('Hello Saurbah')
+    // }
+
+    // const changetext = () =>{
+    //     document.querySelector('h1').innerHTML = 'Hello Saurabh Yaduvanshi'    }
+
+    
+
+
+    // const changeMEe = setTimeout(changetext,2000);
+
+
+    // document.querySelector('#stop').addEventListener('click', ()=>{
+    //     clearTimeout(changeMEe)
+
+
+    //     console.log("Stoped")
+    // })
+
+const heading = document.querySelector("h1");
+const start = document.querySelector("#start");
+const stop = document.querySelector("#stop");
+
+const text = ["Hello", "Saurabh", "Yaduvanshi"];
+
+let index = 0;
+let interval;
+
+start.addEventListener("click", () => {
+    interval = setInterval(() => {
+        heading.textContent = text[index];
+
+        index++;
+
+        if (index === text.length) {
+            index = 0;
+        }
+    }, 1000);
+});
+
+stop.addEventListener("click", () => {
+    clearInterval(interval);
+});    
+
+</script>
+</html>
