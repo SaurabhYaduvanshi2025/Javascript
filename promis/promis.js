@@ -9,3 +9,16 @@ const promisOne = new Promise(function(resolve, reject) { // create a new promis
 promisOne.then(function() {
     console.log('promise consumed'); // this will run after the promise is resolved
 })
+
+
+new Promise(function(resolve, reject){
+
+    setTimeout(function(){
+        console.log('async operation complete'); // this will run after 2 seconds
+        resolve(); // resolve the promise after 2 seconds
+    },2000);
+
+
+}).then(function(){
+    console.log('promise consumed'); // this will run after the promise is resolved
+    })
