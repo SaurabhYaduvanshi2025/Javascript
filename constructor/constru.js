@@ -28,24 +28,56 @@
 
 
 
-function User ( username,email, password){
-    this.username = username;
-    this.email = email;
-    this.password = password
+// function User ( username,email, password){
+//     this.username = username;
+//     this.email = email;
+//     this.password = password
+// }
+
+
+// User.prototype.encryptPassword = function(){
+//     return `${this.password}abc`
+
+// }
+
+// User.prototype.email = function(){
+//     return `${this.email}`
+// }
+
+
+// const tea = new User("Tea", "test@gmail.com","123456")
+
+// console.log(tea.encryptPassword());
+// console.log(tea.username)
+
+class User {
+    constructor(username){
+        this.username = username
+    }
 }
 
+class Teacher extends User{
+    constructor(username,email,passwords){
+          super(username)
+          this.email = email
+          this.passwords = passwords
 
-User.prototype.encryptPassword = function(){
-    return `${this.password}abc`
+    }
 
+    addCourse(){
+    console.log(`A New Course was added by ${this.username}`)
+}
 }
 
-User.prototype.email = function(){
-    return `${this.email}`
-}
+const random = new Teacher("saurabh", "saurabh@gmail.com","1234")
+
+random.addCourse()
+
+const Pani =  new User("pani")
+
+console.log(Pani.username)
 
 
-const tea = new User("Tea", "test@gmail.com","123456")
 
-console.log(tea.encryptPassword());
-console.log(tea.username)
+
+
