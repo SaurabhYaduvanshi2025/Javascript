@@ -50,33 +50,32 @@
 // console.log(tea.encryptPassword());
 // console.log(tea.username)
 
-class User {
-    constructor(username){
-        this.username = username
-    }
-}
+// class User {
+//     constructor(username){
+//         this.username = username
+//     }
+// }
 
-class Teacher extends User{
-    constructor(username,email,passwords){
-          super(username)
-          this.email = email
-          this.passwords = passwords
+// class Teacher extends User{
+//     constructor(username,email,passwords){
+//           super(username)
+//           this.email = email
+//           this.passwords = passwords
 
-    }
+//     }
 
-    addCourse(){
-    console.log(`A New Course was added by ${this.username}`)
-}
-}
+//     addCourse(){
+//     console.log(`A New Course was added by ${this.username}`)
+// }
+// }
 
-const random = new Teacher("saurabh", "saurabh@gmail.com","1234")
+// const random = new Teacher("saurabh", "saurabh@gmail.com","1234")
 
-random.addCourse()
+// random.addCourse()
 
-const Pani =  new User("pani")
+// const Pani =  new User("pani")
 
-console.log(Pani.username)
-
+// console.log(Pani.username);
 
 
 
